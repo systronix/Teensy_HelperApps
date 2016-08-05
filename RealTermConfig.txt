@@ -1,0 +1,9 @@
+Make a shortcut to the Realterm executable and put in on your desktop
+Right click that shortcut, select properties
+In the Realterm shortcut properties "target" dialog box, you want text similar to this: 
+"C:\Program Files (x86)\BEL\Realterm\realterm.exe" scanports=0 baud=9600 port=67 rows=60
+The above line needs quotes where they are shown. 
+The first part of this line, the part in quotes will already exist in your shortcut. You just need to add the rest, including a separating space.
+Note: the port setting may be different for each Teensy module (it's a Windows thing), but once Windows picks a port for a given Teensy it will stay the same.
+Your port will likely be a much lower number. On my PC it is actually that high and it means that since this PC started operation, 67 such devices have been connected to it!
+You can find the port number for any Teensy which is connected at that moment in Device Manager -> Ports. A a screen capture is provided.
